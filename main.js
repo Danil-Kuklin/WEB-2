@@ -1,9 +1,11 @@
+console.log("задача 1")
+
 let a = 36;
 let b = 20;
-console.log("задача 1")
 console.log(`${a} км/ч соответствует ${a/3.6} \n${b} м/с соответствует ${b*3.6} км/ч \n`) 
 
 console.log("задача 2")
+
 a = 7
 b = 5
 let c = 10
@@ -16,7 +18,8 @@ if((a + b) > c && (a + c) > b && (c + b) > a){
 
 } else{console.log(`треугольник не существует`);}
 
-/* console.log("задача 3")
+console.log("задача 3")
+
 const numb = prompt('Введите число', '')
 if(Number.isNaN(Number(numb))){
     console.log("вы ввели не число");
@@ -32,21 +35,43 @@ else{
             console.log(`${i} fizz`)
         }
     }
-} */
+}
 
-console.log("задача 5")
-let myNumb = 5;
-const numb2 = prompt('Введите число', '')
-if(Number.isNaN(Number(numb2))){
-    console.log("вы ввели не число");
+console.log("задача 4");
+
+let str1="*";
+let str2="#";
+while(str1.length<=12){
+    console.log(str1);
+    str1+="*";
+    str2+="#";
+    console.log(str2);
+    str1+="*";
+    str2+="#";
 }
-else{
-    while(numb2!=myNumb){
-        
-    }
-}
+console.log("||");
+
+// console.log("задача 5")
+
+// let myNumb = 5;
+// var numb2 = prompt('Введите число', '');
+// if(Number.isNaN(Number(numb2))){
+//     console.log("вы ввели не число");
+// }
+// else{
+//     if(numb2>myNumb){
+//         console.log("больше");
+//     }
+//     else if(numb2<myNumb){
+//         console.log("меньше");
+//     }
+//     else{
+//         console.log("угадал");
+//     }
+// }
 
 console.log("задача 6")
+
 let n = 20;
 let x = 5;
 let y = 3;
@@ -57,6 +82,7 @@ if(n % x ==0 && n % y == 0 ){
 }
 
 console.log("задача 7")
+
 n = 12;
 if (1<=n && n <= 3){
     console.log(`месяц ${n} => 1 квартал`);
