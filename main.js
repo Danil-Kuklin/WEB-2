@@ -51,24 +51,28 @@ while(str1.length<=12){
 }
 console.log("||");
 
-// console.log("задача 5")
+console.log("задача 5")
 
-// let myNumb = 5;
-// var numb2 = prompt('Введите число', '');
-// if(Number.isNaN(Number(numb2))){
-//     console.log("вы ввели не число");
-// }
-// else{
-//     if(numb2>myNumb){
-//         console.log("больше");
-//     }
-//     else if(numb2<myNumb){
-//         console.log("меньше");
-//     }
-//     else{
-//         console.log("угадал");
-//     }
-// }
+let myNumb = 5;
+let numb2 = prompt('Введите число', '');
+if(Number.isNaN(Number(numb2))){
+    console.log("вы ввели не число");
+}
+else{
+    do{
+        if(numb2 > myNumb){
+            alert("ваше число больше");
+            numb2 = prompt(`Введите число   `, ``);
+        } else if(numb2 < myNumb){
+            alert("ваше число меньше");
+            numb2 = prompt(`Введите число   `, ``);
+        }
+        else{
+            return 0;
+        }
+    } while(numb2 != myNumb);
+    alert("угадано");
+}
 
 console.log("задача 6")
 
