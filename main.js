@@ -68,11 +68,11 @@ else{
             numb2 = prompt(`Введите число   `, ``);
         }
         else{
-            return 0;
+            break;
         }
     } while(numb2 != myNumb);
     alert("угадано");
-}
+ }
 
 console.log("задача 6")
 
