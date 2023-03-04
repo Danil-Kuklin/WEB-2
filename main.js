@@ -42,17 +42,27 @@ else{
 
 console.log("задача 4");
 
-let str1="*";
-let str2="#";
-while(str1.length<=12){
-    console.log(str1);
-    str1+="*";
-    str2+="#";
-    console.log(str2);
-    str1+="*";
-    str2+="#";
+let str="", count=0;
+for(let i = 1; i <= 12; i++){
+    if(i % 2 != 0){
+        while(count < i){
+            str+="*";
+            count++;
+        }
+        str+="\n";
+        count = 0;
+    }
+    else{
+        while(count<i){
+            str+="#";
+            count++;
+        }
+        str+="\n";
+        count = 0;
+    }
 }
-console.log("||");
+str+="||";
+console.log(`\n${str}`);
 
 console.log("задача 5")
 
