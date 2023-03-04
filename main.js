@@ -26,7 +26,10 @@ if(Number.isNaN(Number(numb))){
 }
 else{
     for(let i = 0; i <= numb; i++){
-        if(i % 5 == 0){
+        if(i == 0){
+            console.log(`${i} buzz`);
+        }
+        else if(i % 5 == 0){
             console.log(`${i} fizz buzz`);
         } else if(i % 2 == 0){
             console.log(`${i} buzz`);
