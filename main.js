@@ -21,7 +21,7 @@ if((a + b) > c && (a + c) > b && (c + b) > a){
 console.log("задача 3")
 
 const numb = prompt('Введите число', '')
-if(Number.isNaN(Number(numb))){
+if(isNaN(numb)){
     console.log("вы ввели не число");
 }
 else{
@@ -58,23 +58,23 @@ console.log("задача 5")
 
 let myNumb = 5;
 let numb2 = prompt('Введите число', '');
-if(Number.isNaN(Number(numb2))){
+if(isNaN(numb2)){
     console.log("вы ввели не число");
 }
 else{
     do{
         if(numb2 > myNumb){
-            alert("ваше число больше");
+            alert("ваше число больше")
             numb2 = prompt(`Введите число   `, ``);
         } else if(numb2 < myNumb){
-            alert("ваше число меньше");
+            console.log("ваше число меньше");
             numb2 = prompt(`Введите число   `, ``);
         }
         else{
             break;
         }
     } while(numb2 != myNumb);
-    alert("угадано");
+   console.log("угадано");
  }
 
 console.log("задача 6")
@@ -83,9 +83,9 @@ let n = 20;
 let x = 5;
 let y = 3;
 if(n % x ==0 && n % y == 0 ){
-    console.log("true");
+    console.log(`n = ${n}, x = ${x}, y = ${y} => true`);
 } else{
-    console.log("false");
+    console.log(`n = ${n}, x = ${x}, y = ${y} => false`);
 }
 
 console.log("задача 7")
