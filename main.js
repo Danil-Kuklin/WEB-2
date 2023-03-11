@@ -53,7 +53,7 @@ console.log("задача 5")
 function sampleArray(arr, x){
     let arr1 =[];
     for(let i = 0; i < x; i++){
-       arr1.push(randomNumber(0,6));
+       arr1.push(arr[randomNumber(0,arr.length - 1)]);
     }
     return arr1;
 }
