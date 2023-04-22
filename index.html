@@ -12,15 +12,33 @@
     <h1>Лаба 4</h1>
     <canvas id="canvas"></canvas>
     <div class="threejs"></div>
+    <!-- изменение цвета фигур -->
+    <p style="text-align: center;">цвет фигур</p>
     <form>
-      <label
-        ><input type="radio" value="gray" name="color" checked />Серый</label
-      >
+      <label><input type="radio" value="gray" name="color" checked />Серый</label>
       <label><input type="radio" value="red" name="color" />Красный</label>
       <label><input type="radio" value="green" name="color" />Зеленый</label>
       <label><input type="radio" value="blue" name="color" />Синий</label>
     </form>
 
+    <!-- переключение фронт света -->
+    <p style="text-align: center;">передний свет</p>
+    <form>
+      <label><input type="radio" value="0.6" name="Light" checked />Вкючить</label>
+      <label><input type="radio" value="0" name="Light" />Выключить</label>
+    </form>
+
+    <p style="text-align: center;">диагональный свет</p>
+    <form>
+      <label><input type="radio" value="0.7" name="Light" checked />Вкючить</label>
+      <label><input type="radio" value="0" name="Light" />Выключить</label>
+    </form>
+
+    <p style="text-align: center;">задний свет</p>
+    <form>
+      <label><input type="radio" value="0.6" name="Light" checked />Вкючить</label>
+      <label><input type="radio" value="0" name="Light" />Выключить</label>
+    </form>
     <script src="main.js"></script>
     <script src="three.js"></script>
     <script src="STLloader.js"></script>

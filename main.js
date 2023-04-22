@@ -2,7 +2,20 @@ const div = document.querySelector('.threejs');
 let mesh;
 
 document.forms[0].addEventListener('change', (e) => {
-  mesh.material.color.set(e.target.value);
+  sphere.material.color.set(e.target.value);
+  pyramid.material.color.set(e.target.value);
+})
+
+document.forms[1].addEventListener('change', (e) => {
+  spotLight1.intensity = e.target.value;
+})
+
+document.forms[2].addEventListener('change', (e) => {
+  directionalLight.intensity = e.target.value;
+})
+
+document.forms[3].addEventListener('change', (e) => {
+  spotLight2.intensity = e.target.value;
 })
 
 window.addEventListener('resize', onWindowResize);
@@ -29,14 +42,14 @@ renderer.setSize(div.clientWidth, div.clientHeight);
 div.appendChild(renderer.domElement);
 renderer.shadowMap.enabled = true;
 
-// //свет фронт тени
+//свет фронт тени
 const spotLight1 = new THREE.SpotLight(0xFBE7ED, 0.6);
 spotLight1.position.set(0, 2, 15);
 spotLight1.angle = 0.8;
 spotLight1.castShadow = true;
 scene.add(spotLight1);
 
-// //свет фронт диагональ
+//свет фронт диагональ
 const directionalLight = new THREE.DirectionalLight( 0xA6F45D, 0.7 );
 directionalLight.position.set( -30, 3, 18 );
 scene.add( directionalLight );
