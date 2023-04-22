@@ -50,7 +50,7 @@ spotLight1.castShadow = true;
 scene.add(spotLight1);
 
 //свет фронт диагональ
-const directionalLight = new THREE.DirectionalLight( 0xA6F45D, 0.7 );
+const directionalLight = new THREE.DirectionalLight( 0xFBE7ED, 0.7 );
 directionalLight.position.set( -30, 3, 18 );
 scene.add( directionalLight );
 directionalLight.castShadow = true;
