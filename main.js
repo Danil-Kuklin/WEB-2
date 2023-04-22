@@ -43,20 +43,20 @@ div.appendChild(renderer.domElement);
 renderer.shadowMap.enabled = true;
 
 //свет фронт тени
-const spotLight1 = new THREE.SpotLight(0xFBE7ED, 0.6);
+const spotLight1 = new THREE.SpotLight(0xFBE7ED, 0.5);
 spotLight1.position.set(0, 2, 15);
 spotLight1.angle = 0.8;
 spotLight1.castShadow = true;
 scene.add(spotLight1);
 
 //свет фронт диагональ
-const directionalLight = new THREE.DirectionalLight( 0xFBE7ED, 0.7 );
+const directionalLight = new THREE.DirectionalLight( 0xFBE7ED, 0.5 );
 directionalLight.position.set( -30, 3, 18 );
 scene.add( directionalLight );
 directionalLight.castShadow = true;
 
 //свет бэк диагональ
-const spotLight2 = new THREE.SpotLight(0xFBE7ED, 0.6);
+const spotLight2 = new THREE.SpotLight(0xFBE7ED, 0.5);
 spotLight2.position.set(12, 8, -1);
 spotLight2.angle = 0.8;
 spotLight2.castShadow = true;
@@ -98,7 +98,7 @@ plane2.position.set(1, 1, -3);
 
 //параметры сферы
 const geometry = new THREE.SphereGeometry( 0.8, 32, 32 );
-const material = new THREE.MeshPhongMaterial( {color: 0x324588} );
+const material = new THREE.MeshPhongMaterial( {color: 0x696969} );
 
 const sphere = new THREE.Mesh( geometry, material );
 scene.add( sphere );
@@ -126,7 +126,7 @@ const vertices2 = new Float32Array( [
 ] );
 geometry2.setAttribute('position', new THREE.Float32BufferAttribute( vertices2, 3));
 geometry2.computeVertexNormals();
-const material22 = new THREE.MeshPhongMaterial( { color: 0x61a41e, side:THREE.DoubleSide } );
+const material22 = new THREE.MeshPhongMaterial( { color: 0x696969, side:THREE.DoubleSide } );
 const pyramid = new THREE.Mesh( geometry2, material22 );
 pyramid.castShadow=true;
 pyramid.position.set(2.5  , 2, -1.2)
